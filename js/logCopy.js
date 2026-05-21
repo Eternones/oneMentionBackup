@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
             img.crossOrigin = 'Anonymous';
             img.onload = function () {
                 const canvas = document.createElement('canvas');
+
                 const targetSize = 250;
                 canvas.width = targetSize;
                 canvas.height = targetSize;
@@ -21,7 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
                 }
 
                 ctx.drawImage(this, srcX, srcY, srcWidth, srcHeight, 0, 0, targetSize, targetSize);
-                const dataURL = canvas.toDataURL('image/jpeg', 0.75);
+
+                const dataURL = canvas.toDataURL('image/png');
                 resolve(dataURL);
             };
             img.onerror = reject;
@@ -104,5 +106,5 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
-    
+
 });
