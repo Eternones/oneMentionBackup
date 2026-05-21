@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YeuLog</title>
+    <link rel="icon" href="img/favicon.png"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/log.css">
+    <script src="js/main.js"></script>
+    <script src="js/charMake.js"></script>
+    <script src="js/scriptMake.js"></script>
+    <script src="js/logCopy.js"></script>
+    <script src="js/logDownload.js"></script>
+
+</head>
+
+<body>
+    <div id="Header">
+        <span class="title-head">연곤 한마디 백업</span>
+        <span class="title-desc">V 1.0.0</span>
+    </div>
+
+    <div id="content">
+        <div>
+            <div id="characterMake">
+            <div>
+                <p class="content-head">캐릭터 이름</p>
+                <textarea id="characterName" rows="1" class="inputText"></textarea>
+            </div>
+            <div>
+                <p class="content-head">캐릭터 이미지</p>
+                <input id="characterIcon" type="file" accept="image/*">
+            </div>
+            <div>
+                <button id="createCheckboxBtn">캐릭터 저장</button>
+            </div>
+            </div>
+            <div>
+                <p class="content-head">캐릭터 목록</p>
+                <div id="characterCheckbox"></div>
+            </div>
+            <div>
+                <p class="content-head">본문 입력</p>
+                <textarea id="contentInput" rows="1" class="inputText"></textarea>
+                <br>
+                <button id="submitContentBtn">입력</button>
+            </div>
+            <div id="btnGroup">
+                <button id="htmlCopy">HTML 복사</button>
+                <button id="htmlDownload">HTML 다운로드</button>
+            </div>
+        </div>
+        <div>
+            <div id="result-container">
+                <div id="result"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>made by @Youngonest_</p>
+    </div>
+</body>
+</html>
